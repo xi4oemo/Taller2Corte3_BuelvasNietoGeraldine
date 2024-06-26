@@ -1,0 +1,50 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .id-card {
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .student-details {
+    margin-bottom: 20px;
+    margin-right: 50px;
+  }
+  
+  .student-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .student-name {
+    font-size: 18px;
+    margin: 5;
+    text-align: center;
+  }
+  
+  .user-information {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-information h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .user-information li {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }

@@ -1,0 +1,57 @@
+.layout {
+    display: grid;
+    gap: 4px;
+    grid-template-rows: 40px auto 60px 60px 40px;
+    grid-template-columns: 1fr; 
+    grid-template-areas: 
+      "header"
+      "sidebar"
+      "main"
+      "widget"
+      "statistics"
+      "footer";
+    height: 160vh;
+  }
+  
+  @media (min-width: 480px) {
+    .layout {
+      display: grid;
+      grid-template-rows: 40px auto 88px 40px;
+      grid-template-columns: 160px auto auto;
+      grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "sidebar widget statistics"
+        "footer footer footer";
+    }
+  }
+  
+  header {
+    grid-area: header;
+    background: #C08bfd;
+  }
+  
+  nav {
+    grid-area: sidebar;
+    background: #E9967A; /* Ejemplo: color para el sidebar */
+  }
+  
+  main {
+    grid-area: main;
+    background: #DCDCDC; /* Ejemplo: color para el main */
+  }
+  
+  article.widget {
+    grid-area: widget;
+    background: #FFDAB9; /* Ejemplo: color para el widget */
+  }
+  
+  article.statistics {
+    grid-area: statistics;
+    background: #FFDEAD; /* Ejemplo: color para el statistics */
+  }
+  
+  footer {
+    grid-area: footer;
+    background: #C08bfd;
+  }
